@@ -31,8 +31,9 @@ name: "Earth (Replacement Dimension)",}
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Wireframe 1](https://res.cloudinary.com/dhslunnmd/image/upload/v1635796334/IMG_6823_qwoen2.jpg )
+- [Wireframe 2](https://res.cloudinary.com/dhslunnmd/image/upload/v1635796335/IMG_6824_ysimhh.jpg )
+- [React architecture](https://res.cloudinary.com/dhslunnmd/image/upload/v1635801072/IMG_6828_rduuaj.jpg)
 
 
 ### MVP/PostMVP - 5min
@@ -57,20 +58,24 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Header | This will render the title | 
+| Nav | This will render the nav | 
+| Episode | This will render the episode name and number |
+| Favorites | This will render a list of favorite characters |
+| CharacterInfo | This will render the information about the characters searched |
+| Location | This will render the locations |
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create components | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Create components | H | 8hrs| TBD | TBD |
+| Working with API | H | 8hrs| TBD | TBD |
+| Routing | H | 5hrs| TBD | TBD |
+| Links | H | 3hrs| TBD | TBD |
+| Styling | H | 3hrs| TBD | TBD |
+| Total | H | 6hrs| TBD | TBD |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 

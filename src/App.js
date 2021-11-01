@@ -23,6 +23,7 @@ function App() {
   const nameInfo = currentInfo.map((names) => {
     console.log(names);
     return [
+      <div className="returnDataOutside">
       <div className="returnData">
         <div className="returnData1">
           <h4>Name: {names.name}</h4>
@@ -31,6 +32,7 @@ function App() {
           <p>Gender: {names.gender}</p>
           <p>Status: {names.status}</p>
           <p>Episode(s): {names.episode[0]}</p>
+        </div>
         </div>
       </div>,
     ];
