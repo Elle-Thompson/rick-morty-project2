@@ -9,7 +9,7 @@ function App() {
   const [currentInfo, setCurrentInfo] = useState([]);
 
   const apiInfo = () => {
-    fetch("https://rickandmortyapi.com/api/character/?name=jerry")
+    fetch("https://rickandmortyapi.com/api/character/?name=rick")
       .then((res) => res.json())
       .then((data) => setCurrentInfo(data.results));
   };
@@ -18,9 +18,10 @@ function App() {
     apiInfo();
   }, []);
 
-  console.log(currentInfo);
+  
 
   const nameInfo = currentInfo.map((names) => {
+    console.log(names);
     return [
       <div className="returnData">
         <div className="returnData1">
@@ -29,6 +30,7 @@ function App() {
           <p>Species: {names.species}</p>
           <p>Gender: {names.gender}</p>
           <p>Status: {names.status}</p>
+          <p>Episode(s): {names.episode[0]}</p>
         </div>
       </div>,
     ];
@@ -38,6 +40,8 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
+
+<img src="https://i.ibb.co/0rLkjVK/petro-kosariekov-portal-gun-rick-and-morty2-2.gif" alt="petro-kosariekov-portal-gun-rick-and-morty2-2" />
 
       <form>
         <h3>Enter Name</h3>

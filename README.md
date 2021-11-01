@@ -11,11 +11,9 @@ I decided to create an application that allows the user to search for characters
 
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+I used this Rick and Morty API from  https://rickandmortyapi.com/
 
-https://rickandmortyapi.com/
-
-
+Sample of data:
 ```
 {
 id: 3,
@@ -39,16 +37,17 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The mvp functionality will include basic character search abilities using character name and the ability to save specific characters to a list of favorites.
 
-#### MVP EXAMPLE
+#### MVP 
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
 
-#### PostMVP EXAMPLE
+#### PostMVP 
 
-- Add localStorage or firebase for storage
+- Add animations
+- Add sound clips
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -66,8 +65,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Create components | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Additional Libraries
