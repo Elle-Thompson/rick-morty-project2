@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
+import Nav from "./Nav";
 
+function Header() {
+  return (
+    <div>
+      <img src="https://i.ibb.co/L6hGBgn/rick-and-morty-wallpaper-preview.jpg" alt="wallpaper" />
 
-function Header  () {
-
-
-
-    return (
-
-        <h1>Rick & Morty</h1> 
-
-    );
+      <Nav />
+    </div>
+  );
 }
 
-export default Header
+export default Header;
