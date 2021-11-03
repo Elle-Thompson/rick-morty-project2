@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Route } from "react-router-dom";
 
 function Nav (props) {
 
@@ -6,15 +7,14 @@ function Nav (props) {
     
 
     return (
- <ul >
-<li key={props.id} className="nav-list">Home</li>
-<li key={props.id} className="nav-list">Characters</li>
-<li key={props.id} className="nav-list">Episodes</li>
-<li key={props.id} className="nav-list">Locations</li>
-<li key={props.id} className="nav-list">Favorites</li>
+<div>
 
- </ul>
-
+<Link className="nav-link" exact to="/">Home</Link>
+<Link className="nav-link" exact to="/CharacterInfo">Characters</Link>
+<Link className="nav-link" exact to="/Episode">Episodes</Link>
+<Link className="nav-link" exact to="/Locations">Locations</Link>
+<Link className="nav-link" exact to="/FavoritesList">Favorites</Link>
+</div>
     )
 
 }

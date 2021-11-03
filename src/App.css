@@ -58,6 +58,13 @@ h2 {
   /* border: solid yellow 5px; */
 }
 
+.nav-link {
+  padding: 10px;
+  font-size: 25px;
+  color: darkturquoise;
+  text-decoration: none;
+
+}
 
 /* .rotating-css {
   animation: rotating 2s linear;
