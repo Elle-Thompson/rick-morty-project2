@@ -1,10 +1,17 @@
 import React from "react";
 
 
-function Episodes () {
+function Episode () {
 
-Return 
+return (
+<div>
+
+    <h1>Episodes Page</h1>
+
+</div>
+
+);
 
 }
 
-export deafault Episodes
+export default Episode

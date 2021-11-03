@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-function Characters() {
+function CharacterSearch() {
   const [currentInfo, setCurrentInfo] = useState([]);
   const [charName, setCharName] = useState("");
 
@@ -31,27 +33,41 @@ function Characters() {
   const nameInfo = currentInfo.map((names) => {
     // console.log(names);
     return [
-      <div className="returnDataOutside">
-        <div className="returnData">
-          <div className="returnData1">
-            <h4>Name: {names.name}</h4>
-            <img src={names.image} alt="" />
-            <p> Species: {names.species} </p>
+      <Card className="cards" style={{ width: "20rem" }}>
+        <Card.Img
+          className="card-image"
+          variant="top"
+          src={names.image}
+          alt=""
+        />
+        <Card.Body>
+          <Card.Title>{names.name}</Card.Title>
+          <Card.Text>
+            {/* <p> Species: {names.species} </p>
             <p>Origin Location: {names.location.name}</p>
             <p>Gender: {names.gender}</p>
             <p>Status: {names.status}</p>
             <p>ID: {names.id}</p>
-            <p>Origin Episode: {names.episode[0]}</p>
-            <button id={names.id}>Add to favorites</button>
-          </div>
-        </div>
-      </div>,
+            <p>Origin Episode: {names.episode[0]}</p> */}
+          </Card.Text>
+          {/* <Button variant="primary">Add to favorites</Button> */}
+        </Card.Body>
+      </Card>,
+
+      //   <div className="returnDataOutside">
+      //     <div className="returnData">
+      //       <div className="returnData1">
+
+      //         <button id={names.id}>Add to favorites</button>
+      //       </div>
+      //     </div>
+      //   </div>,
     ];
   });
 
   const someRef = useRef();
 
-  return(
+  return (
     <div>
       {nameInfo}
 
@@ -77,4 +93,4 @@ function Characters() {
   );
 }
 
-export default Characters;
+export default CharacterSearch;

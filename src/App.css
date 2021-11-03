@@ -1,13 +1,11 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
 }
-
-
-
 .App {
   text-align: center;
   background-color: black;
   color: darkturquoise;
+ text-align: center;
  
 }
 
@@ -18,7 +16,7 @@ h2 {
 }
 
 
-.returnData {
+/* .returnData {
   width: auto;
   border: solid green 3px;
   padding: 10px;
@@ -33,7 +31,7 @@ h2 {
   padding: 50px;
   border-radius: 60%;
   margin: 20px;
-}
+} */
 
 .returnDataOutside {
  
@@ -55,6 +53,7 @@ h2 {
 .portal-img {
   backgroundColor: purple;
   border-radius: 40%;
+  height: 100%;
   /* border: solid yellow 5px; */
 }
 
@@ -86,4 +85,17 @@ h2 {
 
 margin: 20px;
 
+}
+
+.cards {
+  padding: 20px;
+  border: solid green 5px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.card-image {
+  border-radius: 50%;
+  padding: 10px;
 }

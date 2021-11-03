@@ -6,7 +6,7 @@ function Header() {
     <div>
       <img src="https://i.ibb.co/L6hGBgn/rick-and-morty-wallpaper-preview.jpg" alt="wallpaper" />
 
-      <Nav />
+      {/* <Nav /> */}
     </div>
   );
 }
