@@ -4,7 +4,7 @@ import Nav from "./Nav";
 function Header() {
   return (
     <div>
-      <img src="https://i.ibb.co/L6hGBgn/rick-and-morty-wallpaper-preview.jpg" alt="wallpaper" />
+      <img src="https://i.ibb.co/2N5Nkwh/rick-and-morty-wallpaper-preview.png" alt="rick-and-morty-wallpaper-preview" />
 
       {/* <Nav /> */}
     </div>

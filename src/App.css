@@ -3,7 +3,6 @@ body {
 }
 .App {
   text-align: center;
-  background-color: black;
   color: darkturquoise;
  text-align: center;
  
@@ -15,6 +14,10 @@ h2 {
   margin-right: 100px;;
 }
 
+.logo-div {
+  margin-bottom: 0;
+
+}
 
 /* .returnData {
   width: auto;
@@ -40,14 +43,21 @@ h2 {
   margin-left: 20px; */
 }
 
-.nav-list {
+.nav-link {
   display: inline;
-  padding: 10px;
-  font-size: 25px;
+  /* padding: 10px; */
+  border: solid white 3px;
+  font-size: 35px;
   text-shadow: -1px 1px 0 white,
   1px 1px 0 white,
  1px -1px 0 white,
 -1px -1px 0 white;
+  color: darkturquoise;
+  text-decoration: none;
+  margin-top: 500px;
+  padding: 2px;
+  margin-left: 10px;
+  border-radius: 30%;
 }
 
 .portal-img {
@@ -57,13 +67,6 @@ h2 {
   /* border: solid yellow 5px; */
 }
 
-.nav-link {
-  padding: 10px;
-  font-size: 25px;
-  color: darkturquoise;
-  text-decoration: none;
-
-}
 
 /* .rotating-css {
   animation: rotating 2s linear;
@@ -74,10 +77,11 @@ h2 {
 /* This code was inspired by http://jsfiddle.net/3jGzF/4/ */
 
 .formClass {
+  margin-top: 100px;
 
-  position:absolute;
+  /* position:absolute;
       top:55%;
-      left:46%;
+      left:46%; */
 
 }
 
@@ -98,4 +102,63 @@ margin: 20px;
 .card-image {
   border-radius: 50%;
   padding: 10px;
+}
+
+.home {
+  /* background-image: url("https://i.ibb.co/5LQx7xL/Testy-Disloyal-Chinchilla-size-restricted.gif"); */
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portal {
+  margin-top: 30px;
+
+}
+
+.portal-div {
+  background-image: url("https://i.ibb.co/2PSY3x9/stars.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  max-width: 100%;
+}
+
+.portal-rm1 {
+  width: 650px;
+  
+}
+.portal-rm2 {
+  width: 650px;
+  margin-bottom: 250px;
+  margin-right: 100px;
+ 
+}
+.portal-text {
+  writing-mode:tb-rl;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform: rotate(90deg);
+  white-space:nowrap;
+  display:block
+}
+
+.home-nav-div {
+  margin: 200px;
+  padding: 300px;
+
+}
+
+.locations-title {
+  padding-top: 60px;
+}
+
+.portal-gun {
+  height: 80px;
+  position: absolute;
+  top:0;
+  left: 0;
+
 }

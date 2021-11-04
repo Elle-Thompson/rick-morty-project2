@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 
 function Locations() {
   const [currentInfo, setCurrentInfo] = useState([]);
-  const [charName, setCharName] = useState("");
+  const [locationName, setLocationName] = useState("");
 
   const [textInput, setTextInput] = useState("");
 
@@ -14,7 +14,7 @@ function Locations() {
   };
 
   const apiInfo = (name) => {
-    fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
+    fetch(`https://rickandmortyapi.com/api/character/?location=${name}`)
       .then((res) => res.json())
       .then((data) => setCurrentInfo(data.results));
   };
@@ -25,7 +25,7 @@ function Locations() {
 
   const handleClick = (event) => {
     event.preventDefault();
-    setCharName(someRef.current.value);
+    setLocationName(someRef.current.value);
     apiInfo(someRef.current.value);
   };
 
@@ -69,8 +69,18 @@ function Locations() {
 
   return (
     <div>
-      {nameInfo}
 
+<div className="portal-gun"> <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" alt="rick-and-morty-rick" />
+        </div>
+
+
+  <img src="https://i.ibb.co/kmFwWpS/77779a1b6d6bf29adbc7b8c2d7b986c7.png" alt="77779a1b6d6bf29adbc7b8c2d7b986c7" />
+
+  <img src="https://i.ibb.co/jTKs4qw/Beth-PNG.png" alt="Beth-PNG" />
+     
+     <div className="locations-title">
+     <h1>Locations</h1>
+</div>
       <form className="formClass">
         {/* <h2>Search Here!</h2> */}
 
@@ -88,7 +98,10 @@ function Locations() {
           type="button"
           value="Submit"
         />
-      </form>
+      </form> 
+      
+      {nameInfo}
+
     </div>
   );
 }

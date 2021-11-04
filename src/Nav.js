@@ -1,16 +1,11 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
-import CharacterSearch from "./CharacterSearch";
-import Header from "./Header";
-import Footer from "./Footer";
-import Home from "./Home"
-import Episode from "./Episode"
-import Locations from "./Locations"
+import { Link} from "react-router-dom";
+
 
 
 function Nav (props) {
 
-console.log("nav")
+
     
 
     return (

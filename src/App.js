@@ -18,7 +18,7 @@ function App() {
       <Route exact path="/" render={() => <Portal />} />
       <Route exact path="/Home" render={() => <Home />} />
       <Route exact path="/CharacterSearch" render={() => <CharacterSearch />} />
-      <Route exact path="/Episodes" render={() => <Episode />} />
+      <Route exact path="/Episode" render={() => <Episode />} />
       <Route exact path="/Locations" render={() => <Locations />} />
     </div>
   );

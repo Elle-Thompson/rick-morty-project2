@@ -1,24 +1,25 @@
 import React from "react";
-import { Link, Route } from "react-router-dom"; 
-import CharacterSearch from "./CharacterSearch";
-import Header from "./Header";
-import Footer from "./Footer";
-import Episode from "./Episode"
-import Nav from './Nav';
+import Nav from "./Nav";
 
 function Home () {
 
-console.log("Home")
+
 
   return (
     <div className='home'>
-      
 
+    {/* <img src="https://i.ibb.co/2N5Nkwh/rick-and-morty-wallpaper-preview.png" alt="rick-and-morty-wallpaper-preview" /> */}
+      <div className="home-nav-div">
        
-     <img src="https://i.ibb.co/r6VdPM8/flat-750x1000-075-f-u2.jpg" />
 
-
+        <img src="https://i.ibb.co/6RNXLFW/rkelulxzx6stg4ocz4ic.png" alt="rkelulxzx6stg4ocz4ic" />
+        
         <Nav />
+
+        <img src="https://i.ibb.co/KVKtCHq/0-IMG-2004.png" alt="0-IMG-2004" />
+        
+
+        </div>
 
     </div>
   );

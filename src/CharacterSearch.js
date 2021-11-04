@@ -69,8 +69,14 @@ function CharacterSearch() {
 
   return (
     <div>
-      {nameInfo}
+      <div className="portal-gun"> <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" alt="rick-and-morty-rick" />
+        </div>
+      <img
+        src="https://i.ibb.co/MC6wdQJ/Rick-And-Morty-Wallpapers-For-Iphone-Hd-Hd-Wallpapers.png"
+        alt="Rick-And-Morty-Wallpapers-For-Iphone-Hd-Hd-Wallpapers"
+      />
 
+      <h1 className="char-title">Characters</h1>
       <form className="formClass">
         {/* <h2>Search Here!</h2> */}
 
@@ -89,6 +95,8 @@ function CharacterSearch() {
           value="Submit"
         />
       </form>
+
+      {nameInfo}
     </div>
   );
 }
