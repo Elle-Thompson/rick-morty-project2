@@ -61,10 +61,10 @@ function CharacterSearch() {
   return (
     <div>
        <Link className="portal-gun" exact to="/Home">
-        <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
+        <img className="pg1" src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
         </Link>
 
-        <img className="morty-portal" src="https://i.ibb.co/syCB0q1/rick-and-morty-duct-tape-pickle-rick-custom-cursor.png" alt="pickle-rick" />
+        <img className="summer-pic" src="https://i.ibb.co/syCB0q1/rick-and-morty-duct-tape-pickle-rick-custom-cursor.png" alt="pickle-rick" />
 
       <img
         src="https://i.ibb.co/MC6wdQJ/Rick-And-Morty-Wallpapers-For-Iphone-Hd-Hd-Wallpapers.png"

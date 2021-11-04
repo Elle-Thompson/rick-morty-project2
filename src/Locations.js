@@ -62,7 +62,7 @@ function Locations() {
   return (
     <div>
         <Link className="portal-gun" exact to="/Home">
-        <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
+        <img className="pg1" src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
         </Link>
 
 

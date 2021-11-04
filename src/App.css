@@ -19,29 +19,11 @@ h2 {
 
 }
 
-/* .returnData {
-  width: auto;
-  border: solid green 3px;
-  padding: 10px;
-  border-radius: 60%;
-  margin: 0px;
- 
+.nav-links {
+  height: 550px;
+
 }
 
-.returnData1 {
-  width: auto;
-  border: solid green 3px;
-  padding: 50px;
-  border-radius: 60%;
-  margin: 20px;
-} */
-
-.returnDataOutside {
- 
-  /* border-right: solid green 2px;
-  border-left: solid green 2px;
-  margin-left: 20px; */
-}
 
 .nav-link {
   display: inline;
@@ -56,7 +38,7 @@ h2 {
   text-decoration: none;
   margin-top: 500px;
   padding: 2px;
-  margin-left: 10px;
+  margin-left: 30px;
   border-radius: 30%;
 }
 
@@ -68,10 +50,6 @@ h2 {
 }
 
 
-/* .rotating-css {
-  animation: rotating 2s linear;
-  animation-iteration-count: infinite;
-} */
 
 
 /* This code was inspired by http://jsfiddle.net/3jGzF/4/ */
@@ -93,7 +71,7 @@ margin: 20px;
 
 .cards {
   padding: 20px;
-  border: solid green 5px;
+  border: solid lightgreen 5px;
   margin: 20px;
   display: inline-block;
   border-radius: 50%;
@@ -122,18 +100,20 @@ margin: 20px;
   background-image: url("https://i.ibb.co/2PSY3x9/stars.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  height: auto;
+  height: 100vh;
   max-width: 100%;
 }
 
 .portal-rm1 {
-  width: 650px;
+  width: auto;
+  height: 700px;
+  margin-top: 70px;
   
 }
 .portal-rm2 {
-  width: 650px;
-  margin-bottom: 250px;
-  margin-right: 100px;
+  width: auto;
+  height: 700px;
+  margin-top: 80px;
  
 }
 .portal-text {
@@ -148,8 +128,10 @@ margin: 20px;
 }
 
 .home-nav-div {
-  margin: 200px;
-  padding: 300px;
+  /* margin: 200px;
+  padding: 300px; */
+  postion: absolute;
+  max-width: auto;
 
 }
 
@@ -158,11 +140,14 @@ margin: 20px;
 }
 
 .portal-gun {
-  height: 80px;
+  
   position: absolute;
   top:0;
   left: 0;
+}
 
+.pg1 {
+  height: 160px;
 }
 
 h1 {
@@ -172,8 +157,13 @@ h1 {
 }
 
 .morty-portal {
-  /* padding-right: 0; */
-  height: 120px;
+   padding-right: 0; 
+  height: 150px;
+}
+
+.morty-portal1 {
+  padding-right: 0;
+  height: 150px;
 }
 
 .summer-pic {

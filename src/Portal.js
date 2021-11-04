@@ -21,8 +21,8 @@ function Portal() {
         alt="Rick"
       />
       
-        <Link className="nav-links" exact to="/Home">
-          <img
+        <Link  exact to="/Home">
+          <img className="nav-links"
             src="https://i.ibb.co/FWX8KFx/petro-kosariekov-portal-gun-rick-and-morty2-2-copy.png"
             alt="copy"
           />
