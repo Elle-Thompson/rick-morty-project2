@@ -1,11 +1,12 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 
 function Episode() {
   const [currentInfo, setCurrentInfo] = useState([]);
-  const [locationName, setLocationName] = useState("");
+  const [episodeName, setEpisodeName] = useState("");
 
   const [textInput, setTextInput] = useState("");
 
@@ -14,7 +15,7 @@ function Episode() {
   };
 
   const apiInfo = (name) => {
-    fetch(`https://rickandmortyapi.com/api/character/?location=${name}`)
+    fetch(`https://rickandmortyapi.com/api/episode/?name=${name}`)
       .then((res) => res.json())
       .then((data) => setCurrentInfo(data.results));
   };
@@ -25,7 +26,7 @@ function Episode() {
 
   const handleClick = (event) => {
     event.preventDefault();
-    setLocationName(someRef.current.value);
+    setEpisodeName(someRef.current.value);
     apiInfo(someRef.current.value);
   };
 
@@ -42,15 +43,8 @@ function Episode() {
         />
         <Card.Body>
           <Card.Title>{names.name}</Card.Title>
-          <Card.Text>
-            {/* <p> Species: {names.species} </p>
-            <p>Origin Location: {names.location.name}</p>
-            <p>Gender: {names.gender}</p>
-            <p>Status: {names.status}</p>
-            <p>ID: {names.id}</p>
-            <p>Origin Episode: {names.episode[0]}</p> */}
-          </Card.Text>
-          {/* <Button variant="primary">Add to favorites</Button> */}
+         
+          
         </Card.Body>
       </Card>,
 
@@ -69,12 +63,16 @@ function Episode() {
 
   return (
     <div>
+         <Link className="portal-gun" exact to="/Home">
+        <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
+        </Link>
         
-        <div className="portal-gun"> <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" alt="rick-and-morty-rick" />
-        </div>
+        
 
 
-<img src="https://i.ibb.co/122dyRc/bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8.png" alt="bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8" />
+<img className="summer-pic" src="https://i.ibb.co/122dyRc/bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8.png" alt="bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8" />
+
+<img className="summer-pic" src="https://i.ibb.co/tBRg2Wt/0e6c51f100fb15f146f16d1c5669573b.png" alt="0e6c51f100fb15f146f16d1c5669573b" />
 
     <h1>Search Episodes! </h1>
 
@@ -93,7 +91,7 @@ function Episode() {
           onClick={handleClick}
           id="submit-button"
           type="button"
-          value="Submit"
+          value="Search"
         />
       </form> 
       

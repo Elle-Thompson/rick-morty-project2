@@ -12,11 +12,17 @@ function Home () {
       <div className="home-nav-div">
        
 
-        <img src="https://i.ibb.co/6RNXLFW/rkelulxzx6stg4ocz4ic.png" alt="rkelulxzx6stg4ocz4ic" />
+        <img className="main-logo" src="https://i.ibb.co/6RNXLFW/rkelulxzx6stg4ocz4ic.png" alt="rkelulxzx6stg4ocz4ic" />
         
         <Nav />
 
-        <img src="https://i.ibb.co/KVKtCHq/0-IMG-2004.png" alt="0-IMG-2004" />
+        <img className="morty-portal" src="https://i.ibb.co/GR6556q/3958034.png" alt="3958034" />
+
+        <img src="https://i.ibb.co/c6yFvd7/15-Rick-and-Morty-5.png" alt="Morty" />
+
+        <img className="morty-portal" src="https://i.ibb.co/VMCQcZt/091f814f05cabf46c7c187203a0f6dbc.png" alt="091f814f05cabf46c7c187203a0f6dbc" />
+
+        {/* <img src="https://i.ibb.co/KVKtCHq/0-IMG-2004.png" alt="0-IMG-2004" /> */}
         
 
         </div>

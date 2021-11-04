@@ -1,8 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
-import { Link, Route } from "react-router-dom";
-import CharacterSearch from "./CharacterSearch";
-import Home from "./Home";
+import { Link } from "react-router-dom";
 
 function Portal() {
   return (

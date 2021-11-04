@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function CharacterSearch() {
   const [currentInfo, setCurrentInfo] = useState([]);
@@ -21,7 +21,7 @@ function CharacterSearch() {
 
   useEffect(() => {
     apiInfo("");
-  }, []);
+  }, {charName});
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -31,7 +31,6 @@ function CharacterSearch() {
 
   console.log(currentInfo);
   const nameInfo = currentInfo.map((names) => {
-    // console.log(names);
     return [
       <Card className="cards" style={{ width: "20rem" }}>
         <Card.Img
@@ -54,14 +53,6 @@ function CharacterSearch() {
         </Card.Body>
       </Card>,
 
-      //   <div className="returnDataOutside">
-      //     <div className="returnData">
-      //       <div className="returnData1">
-
-      //         <button id={names.id}>Add to favorites</button>
-      //       </div>
-      //     </div>
-      //   </div>,
     ];
   });
 
@@ -69,14 +60,18 @@ function CharacterSearch() {
 
   return (
     <div>
-      <div className="portal-gun"> <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" alt="rick-and-morty-rick" />
-        </div>
+       <Link className="portal-gun" exact to="/Home">
+        <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
+        </Link>
+
+        <img className="morty-portal" src="https://i.ibb.co/syCB0q1/rick-and-morty-duct-tape-pickle-rick-custom-cursor.png" alt="pickle-rick" />
+
       <img
         src="https://i.ibb.co/MC6wdQJ/Rick-And-Morty-Wallpapers-For-Iphone-Hd-Hd-Wallpapers.png"
         alt="Rick-And-Morty-Wallpapers-For-Iphone-Hd-Hd-Wallpapers"
       />
 
-      <h1 className="char-title">Characters</h1>
+      <h1 className="char-title">Search Characters!</h1>
       <form className="formClass">
         {/* <h2>Search Here!</h2> */}
 
@@ -92,7 +87,7 @@ function CharacterSearch() {
           onClick={handleClick}
           id="submit-button"
           type="button"
-          value="Submit"
+          value="Search"
         />
       </form>
 

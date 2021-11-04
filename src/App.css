@@ -47,11 +47,11 @@ h2 {
   display: inline;
   /* padding: 10px; */
   border: solid white 3px;
-  font-size: 35px;
-  text-shadow: -1px 1px 0 white,
-  1px 1px 0 white,
- 1px -1px 0 white,
--1px -1px 0 white;
+  font-size: 45px;
+  text-shadow: -1px 1px 0 orange,
+  1px 1px 0 orange,
+ 1px -1px 0 orange,
+-1px -1px 0 orange;
   color: darkturquoise;
   text-decoration: none;
   margin-top: 500px;
@@ -109,6 +109,8 @@ margin: 20px;
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content:center;
 }
 
 .portal {
@@ -161,4 +163,26 @@ margin: 20px;
   top:0;
   left: 0;
 
+}
+
+h1 {
+  /* font-family: 'Creepster', cursive; */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 60px;
+}
+
+.morty-portal {
+  /* padding-right: 0; */
+  height: 120px;
+}
+
+.summer-pic {
+  height: 200px;
+  margin: 20px;
+}
+
+.main-logo {
+  height: 500px;
+  margin-top: 0;
+  padding-top: 0;
 }

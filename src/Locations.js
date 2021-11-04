@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function Locations() {
   const [currentInfo, setCurrentInfo] = useState([]);
@@ -14,7 +14,7 @@ function Locations() {
   };
 
   const apiInfo = (name) => {
-    fetch(`https://rickandmortyapi.com/api/character/?location=${name}`)
+    fetch(`https://rickandmortyapi.com/api/location/?name=${name}`)
       .then((res) => res.json())
       .then((data) => setCurrentInfo(data.results));
   };
@@ -30,18 +30,17 @@ function Locations() {
   };
 
   console.log(currentInfo);
-  const nameInfo = currentInfo.map((names) => {
-    // console.log(names);
+  const nameInfo = currentInfo.map((location) => {
     return [
       <Card className="cards" style={{ width: "20rem" }}>
         <Card.Img
           className="card-image"
           variant="top"
-          src={names.image}
+          src={location.image}
           alt=""
         />
         <Card.Body>
-          <Card.Title>{names.name}</Card.Title>
+          <Card.Title>{location.name}</Card.Title>
           <Card.Text>
             {/* <p> Species: {names.species} </p>
             <p>Origin Location: {names.location.name}</p>
@@ -54,14 +53,7 @@ function Locations() {
         </Card.Body>
       </Card>,
 
-      //   <div className="returnDataOutside">
-      //     <div className="returnData">
-      //       <div className="returnData1">
-
-      //         <button id={names.id}>Add to favorites</button>
-      //       </div>
-      //     </div>
-      //   </div>,
+    
     ];
   });
 
@@ -69,17 +61,17 @@ function Locations() {
 
   return (
     <div>
+        <Link className="portal-gun" exact to="/Home">
+        <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
+        </Link>
 
-<div className="portal-gun"> <img src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" alt="rick-and-morty-rick" />
-        </div>
 
+  <img className="summer-pic" src="https://i.ibb.co/kmFwWpS/77779a1b6d6bf29adbc7b8c2d7b986c7.png" alt="77779a1b6d6bf29adbc7b8c2d7b986c7" />
 
-  <img src="https://i.ibb.co/kmFwWpS/77779a1b6d6bf29adbc7b8c2d7b986c7.png" alt="77779a1b6d6bf29adbc7b8c2d7b986c7" />
-
-  <img src="https://i.ibb.co/jTKs4qw/Beth-PNG.png" alt="Beth-PNG" />
+  <img className="summer-pic" src="https://i.ibb.co/jTKs4qw/Beth-PNG.png" alt="Beth-PNG" />
      
      <div className="locations-title">
-     <h1>Locations</h1>
+     <h1>Search Locations!</h1>
 </div>
       <form className="formClass">
         {/* <h2>Search Here!</h2> */}
@@ -96,7 +88,7 @@ function Locations() {
           onClick={handleClick}
           id="submit-button"
           type="button"
-          value="Submit"
+          value="Search"
         />
       </form> 
       
