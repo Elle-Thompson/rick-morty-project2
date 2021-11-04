@@ -40,14 +40,10 @@ function Locations() {
           alt=""
         />
         <Card.Body>
-          <Card.Title>{location.name}</Card.Title>
+          <Card.Title>Name: {location.name}</Card.Title>
           <Card.Text>
-            {/* <p> Species: {names.species} </p>
-            <p>Origin Location: {names.location.name}</p>
-            <p>Gender: {names.gender}</p>
-            <p>Status: {names.status}</p>
-            <p>ID: {names.id}</p>
-            <p>Origin Episode: {names.episode[0]}</p> */}
+           <p>Type: {location.type}</p>
+           <p>Dimension: {location.dimension}</p>
           </Card.Text>
           {/* <Button variant="primary">Add to favorites</Button> */}
         </Card.Body>

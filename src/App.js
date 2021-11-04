@@ -8,9 +8,11 @@ import Portal from "./Portal";
 import Home from "./Home";
 import Episode from "./Episode"
 import Locations from "./Locations"
+import CharacterInfo from "./CharacterInfo";
 
 function App() {
   
+  const [currentInfo, setCurrentInfo] = useState([]);
 
   return (
     <div className="App">
@@ -20,6 +22,8 @@ function App() {
       <Route exact path="/CharacterSearch" render={() => <CharacterSearch />} />
       <Route exact path="/Episode" render={() => <Episode />} />
       <Route exact path="/Locations" render={() => <Locations />} />
+      <Route exact path="/CharacterInfo/:info" render={(props) => <CharacterInfo {...props}  />} />
+      
     </div>
   );
 }

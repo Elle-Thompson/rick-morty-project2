@@ -14,7 +14,7 @@ function CharacterSearch() {
   };
 
   const apiInfo = (name) => {
-    fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
+    fetch(`https://rickandmortyapi.com/api/character/?name=${name}&limit=30`)
       .then((res) => res.json())
       .then((data) => setCurrentInfo(data.results));
   };
@@ -40,16 +40,8 @@ function CharacterSearch() {
           alt=""
         />
         <Card.Body>
-          <Card.Title>{names.name}</Card.Title>
-          <Card.Text>
-            {/* <p> Species: {names.species} </p>
-            <p>Origin Location: {names.location.name}</p>
-            <p>Gender: {names.gender}</p>
-            <p>Status: {names.status}</p>
-            <p>ID: {names.id}</p>
-            <p>Origin Episode: {names.episode[0]}</p> */}
-          </Card.Text>
-          {/* <Button variant="primary">Add to favorites</Button> */}
+         <Link to={"/CharacterInfo/"+names.id} > <Card.Title>{names.name}</Card.Title> </Link>
+        
         </Card.Body>
       </Card>,
 
@@ -64,7 +56,7 @@ function CharacterSearch() {
         <img className="pg1" src="https://i.ibb.co/tXtBq44/rick-and-morty-rick-sanchez-portal-gun-custom-cursor.png" />
         </Link>
 
-        <img className="summer-pic" src="https://i.ibb.co/syCB0q1/rick-and-morty-duct-tape-pickle-rick-custom-cursor.png" alt="pickle-rick" />
+        
 
       <img
         src="https://i.ibb.co/MC6wdQJ/Rick-And-Morty-Wallpapers-For-Iphone-Hd-Hd-Wallpapers.png"

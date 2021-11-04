@@ -49,14 +49,7 @@ function Episode() {
         </Card.Body>
       </Card>,
 
-      //   <div className="returnDataOutside">
-      //     <div className="returnData">
-      //       <div className="returnData1">
-
-      //         <button id={names.id}>Add to favorites</button>
-      //       </div>
-      //     </div>
-      //   </div>,
+     
     ];
   });
 
@@ -74,6 +67,8 @@ function Episode() {
 <img className="summer-pic" src="https://i.ibb.co/122dyRc/bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8.png" alt="bg-f8f8f8-flat-750x-075-f-pad-750x1000-f8f8f8" />
 
 <img className="summer-pic" src="https://i.ibb.co/tBRg2Wt/0e6c51f100fb15f146f16d1c5669573b.png" alt="0e6c51f100fb15f146f16d1c5669573b" />
+
+<img className="summer-pic" src="https://i.ibb.co/syCB0q1/rick-and-morty-duct-tape-pickle-rick-custom-cursor.png" alt="pickle-rick" />
 
     <h1>Search Episodes! </h1>
 
