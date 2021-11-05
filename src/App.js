@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
 import Header from "./Header";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import CharacterSearch from "./CharacterSearch";
 import Portal from "./Portal";
 import Home from "./Home";

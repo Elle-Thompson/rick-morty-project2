@@ -175,3 +175,17 @@ h1 {
   margin-top: 0;
   padding-top: 0;
 }
+
+.info-cards {
+  border: solid lightgreen 5px;
+  margin-left: 40%;
+  padding: 20px;
+  margin-top: 10%;
+  border-radius: 30%;
+
+}
+
+.card-image1 {
+  border: solid lightgreen 5px;
+  border-radius: 35%;
+}

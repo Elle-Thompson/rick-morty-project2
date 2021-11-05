@@ -30,6 +30,7 @@ function CharacterSearch() {
   };
 
   console.log(currentInfo);
+  
   const nameInfo = currentInfo.map((names) => {
     return [
       <Card className="cards" style={{ width: "20rem" }}>
