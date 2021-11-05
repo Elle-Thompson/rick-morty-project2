@@ -30,7 +30,7 @@ function CharacterSearch() {
   };
 
   console.log(currentInfo);
-  
+
   const nameInfo = currentInfo.map((names) => {
     return [
       <Card className="cards" style={{ width: "20rem" }}>
@@ -41,7 +41,7 @@ function CharacterSearch() {
           alt=""
         />
         <Card.Body>
-         <Link to={"/CharacterInfo/"+names.id} > <Card.Title>{names.name}</Card.Title> </Link>
+         <Link to={"/CharacterInfo/"+names.id} > <Card.Title><span>{names.name}</span></Card.Title> </Link>
         
         </Card.Body>
       </Card>,

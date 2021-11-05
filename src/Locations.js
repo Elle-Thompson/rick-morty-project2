@@ -40,10 +40,10 @@ function Locations() {
           alt=""
         />
         <Card.Body>
-          <Card.Title>Name: {location.name}</Card.Title>
+          <Card.Title> <span>Name: </span>{location.name}</Card.Title>
           <Card.Text>
-           <p>Type: {location.type}</p>
-           <p>Dimension: {location.dimension}</p>
+           <p> <span>Type: </span>{location.type}</p>
+           <p> <span>Dimension: </span>{location.dimension}</p>
           </Card.Text>
           {/* <Button variant="primary">Add to favorites</Button> */}
         </Card.Body>

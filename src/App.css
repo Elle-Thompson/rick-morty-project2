@@ -24,6 +24,14 @@ h2 {
 
 }
 
+.card-title {
+
+  color: turquoise;
+  text-decoration: none;
+
+
+}
+
 
 .nav-link {
   display: inline;
@@ -38,7 +46,7 @@ h2 {
   text-decoration: none;
   margin-top: 500px;
   padding: 2px;
-  margin-left: 30px;
+  margin-left: 60px;
   border-radius: 30%;
 }
 
@@ -115,7 +123,7 @@ margin: 20px;
   margin-top: 80px;
  
 }
-.portal-text {
+/* .portal-text {
   writing-mode:tb-rl;
   -webkit-transform:rotate(90deg);
   -moz-transform:rotate(90deg);
@@ -124,7 +132,7 @@ margin: 20px;
   transform: rotate(90deg);
   white-space:nowrap;
   display:block
-}
+} */
 
 .home-nav-div {
   /* margin: 200px;
@@ -150,7 +158,7 @@ margin: 20px;
 }
 
 h1 {
-  /* font-family: 'Creepster', cursive; */
+  
   font-family: 'Press Start 2P', cursive;
   font-size: 60px;
 }
@@ -166,8 +174,8 @@ h1 {
 }
 
 .summer-pic {
-  height: 200px;
-  margin: 20px;
+  height: 220px;
+  margin-left: 80px;
 }
 
 .main-logo {
@@ -178,14 +186,35 @@ h1 {
 
 .info-cards {
   border: solid lightgreen 5px;
-  margin-left: 40%;
-  padding: 20px;
-  margin-top: 10%;
+  padding: 10px;
+  margin-top: 3%;
   border-radius: 30%;
+  
 
 }
 
 .card-image1 {
   border: solid lightgreen 5px;
   border-radius: 35%;
+  
+}
+
+.rm-single {
+
+  height: 300px;
+
+}
+
+.charInfo-wrapper {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+span{
+font-size: 20px;
+color: black;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }

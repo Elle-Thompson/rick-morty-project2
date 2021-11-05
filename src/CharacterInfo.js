@@ -4,30 +4,43 @@ import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 
 function CharacterInfo(props) {
+
+
+
   // let {info} = useParams ();
+ 
+  const [characterInfoBox, setCharacterInfoBox] = useState({});
 
-  const [characterInfoBox, setCharacterInfoBox] = useState([]);
 
-  const character = props.match.params.info;
 
-  const apiInfo = () => {
-    fetch(`https://rickandmortyapi.com/api/character/${character}`)
+
+
+const character  = props.match.params.info;
+
+  const apiInfo =  () => {
+      fetch(`https://rickandmortyapi.com/api/character/${character}`)
       .then((res) => res.json())
       .then((data) => setCharacterInfoBox(data));
-
-    // console.log(results)
+ 
   };
 
-  useEffect(() => {
-    apiInfo("");
-  }, {});
+ useEffect(() => {
+    apiInfo();
+  }, {} );
+
 
   console.log(characterInfoBox);
 
-  let infoBox = characterInfoBox.origin;
+   
+
+
+ 
+
+ 
 
   return (
-    <div>
+    
+      <div className="charInfo-wrapper">
       <Link className="portal-gun" exact to="/CharacterSearch">
         <img
           className="pg1"
@@ -36,7 +49,10 @@ function CharacterInfo(props) {
       </Link>
 
 
-     {/* <img src="https://i.ibb.co/C2Y36xK/11603560233oap0a4ne1l.png" alt="11603560233oap0a4ne1l" /> */}
+     
+     
+
+
       <Card className="info-cards" style={{ width: "30rem" }}>
         <Card.Img
           className="card-image1"
@@ -45,20 +61,24 @@ function CharacterInfo(props) {
           alt=""
         />
         <Card.Body>
-          <Card.Title>Name: {characterInfoBox.name}</Card.Title>
+          <Card.Title className="card-title" > <span>Name:</span> {characterInfoBox.name}</Card.Title>
           <Card.Text>
-            <p> Species: {characterInfoBox.species} </p>
-            <p> Gender: {characterInfoBox.gender} </p>
-            <p> Type: {characterInfoBox.type} </p>
-            <p> Current Status: {characterInfoBox.status} </p>
-            {/* <p> Origin Location: {characterInfoBox.origin.name} </p>
-            <p> Current Location:  {characterInfoBox.location.name}    </p> */}
+            <p><span> Species:</span> {characterInfoBox.species} </p>
+            <p> <span>Gender:</span> {characterInfoBox.gender} </p>
+            <p> <span>Type:</span> {characterInfoBox.type} </p>
+            <p> <span>Current Status:</span> {characterInfoBox.status} </p>
+            {/* <p> Episode: {characterInfoBox.episode} </p> */}
+              {/* <p> Origin Location: {characterInfoBox.origin[0]} </p> */}
+            {/* <p> Current Location:  {characterInfoBox.location.name}    </p> */}
             <p> </p>
           </Card.Text>
         </Card.Body>
       </Card>
-      ,
-    </div>
+
+      </div>
+
+      
+    
   );
 }
 

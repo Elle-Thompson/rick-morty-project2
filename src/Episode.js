@@ -35,15 +35,10 @@ function Episode() {
     // console.log(names);
     return [
       <Card className="cards" style={{ width: "20rem" }}>
-        <Card.Img
-          className="card-image"
-          variant="top"
-          src={names.image}
-          alt=""
-        />
+    
         <Card.Body>
-          <Card.Title>{names.name}</Card.Title>
-          <Card.Text> {names.air_date} {names.characters[0]}</Card.Text>
+          <Card.Title><span>  Title: </span>{names.name}</Card.Title>
+          <Card.Text> <span>Air Date: </span> {names.air_date}</Card.Text>
          
           
         </Card.Body>
