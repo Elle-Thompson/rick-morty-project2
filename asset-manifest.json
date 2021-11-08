@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/rick-morty-project2/static/css/main.1e7ddf54.chunk.css",
-    "main.js": "/rick-morty-project2/static/js/main.625529d3.chunk.js",
-    "main.js.map": "/rick-morty-project2/static/js/main.625529d3.chunk.js.map",
+    "main.js": "/rick-morty-project2/static/js/main.dcbad55a.chunk.js",
+    "main.js.map": "/rick-morty-project2/static/js/main.dcbad55a.chunk.js.map",
     "runtime-main.js": "/rick-morty-project2/static/js/runtime-main.8ba4bbd2.js",
     "runtime-main.js.map": "/rick-morty-project2/static/js/runtime-main.8ba4bbd2.js.map",
     "static/css/2.8c0e6b67.chunk.css": "/rick-morty-project2/static/css/2.8c0e6b67.chunk.css",
-    "static/js/2.50e90924.chunk.js": "/rick-morty-project2/static/js/2.50e90924.chunk.js",
-    "static/js/2.50e90924.chunk.js.map": "/rick-morty-project2/static/js/2.50e90924.chunk.js.map",
+    "static/js/2.c93c6799.chunk.js": "/rick-morty-project2/static/js/2.c93c6799.chunk.js",
+    "static/js/2.c93c6799.chunk.js.map": "/rick-morty-project2/static/js/2.c93c6799.chunk.js.map",
     "static/js/3.5363a970.chunk.js": "/rick-morty-project2/static/js/3.5363a970.chunk.js",
     "static/js/3.5363a970.chunk.js.map": "/rick-morty-project2/static/js/3.5363a970.chunk.js.map",
     "index.html": "/rick-morty-project2/index.html",
     "static/css/2.8c0e6b67.chunk.css.map": "/rick-morty-project2/static/css/2.8c0e6b67.chunk.css.map",
     "static/css/main.1e7ddf54.chunk.css.map": "/rick-morty-project2/static/css/main.1e7ddf54.chunk.css.map",
-    "static/js/2.50e90924.chunk.js.LICENSE.txt": "/rick-morty-project2/static/js/2.50e90924.chunk.js.LICENSE.txt"
+    "static/js/2.c93c6799.chunk.js.LICENSE.txt": "/rick-morty-project2/static/js/2.c93c6799.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8ba4bbd2.js",
     "static/css/2.8c0e6b67.chunk.css",
-    "static/js/2.50e90924.chunk.js",
+    "static/js/2.c93c6799.chunk.js",
     "static/css/main.1e7ddf54.chunk.css",
-    "static/js/main.625529d3.chunk.js"
+    "static/js/main.dcbad55a.chunk.js"
   ]
 }
