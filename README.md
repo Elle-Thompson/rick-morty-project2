@@ -48,6 +48,7 @@ The mvp functionality will include basic character search abilities using charac
 #### PostMVP 
 
 - Add animations
+- Add sound clips
 
 
 ## Components
