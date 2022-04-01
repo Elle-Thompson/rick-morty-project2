@@ -48,7 +48,7 @@ The mvp functionality will include basic character search abilities using charac
 #### PostMVP 
 
 - Add animations
-- Add sound clips
+
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
